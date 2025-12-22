@@ -1,5 +1,4 @@
-# Floating-Point Error Visualizer
-
+# ErrorExplorer
 A Java Swing application that simulates and visualizes IEEE-754 double-precision (binary64) floating-point arithmetic operations, showing how rounding errors occur and accumulate.
 
 ## Features
