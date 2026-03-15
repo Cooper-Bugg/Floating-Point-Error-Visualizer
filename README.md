@@ -1,17 +1,39 @@
 # ErrorExplorer
-A Java Swing application that simulates and visualizes IEEE-754 double-precision (binary64) floating-point arithmetic operations, showing how rounding errors occur and accumulate.
 
-## Features
+ErrorExplorer is a Java Swing application that simulates IEEE-754 double-precision floating-point arithmetic and visualizes how rounding errors appear during computation. It is designed as an educational tool for understanding binary representation, exponent alignment, mantissa behavior, rounding, and floating-point edge cases. :contentReference[oaicite:4]{index=4}
 
-- **Interactive GUI**: Input two decimal numbers and see how they're represented in binary64 format
-- **Detailed Visualization**: Shows the complete arithmetic process including:
-  - Binary representation (sign, exponent, mantissa)
-  - Alignment of operands
-  - Guard, Round, and Sticky bits
-  - Rounding operations
-  - Final result in both binary and decimal
-- **Pre-loaded Examples**: Demonstrates common floating-point issues like precision errors, catastrophic cancellation, and associativity problems
-- **Step-by-step Breakdown**: See exactly how floating-point operations work under the hood
+## Current Features
+
+- Interactive GUI for entering two decimal values
+- Supports add, subtract, multiply, and divide operations
+- Shows binary64 structure including sign, exponent, and mantissa
+- Visualizes alignment, guard bits, round bits, sticky bits, and rounding steps
+- Includes built-in examples for precision loss, catastrophic cancellation, and associativity issues :contentReference[oaicite:5]{index=5}
+
+## Tech Stack
+
+- Java
+- Swing GUI
+- IEEE-754 binary64 simulation concepts :contentReference[oaicite:6]{index=6}
+
+## Future Plans
+
+This project has strong long-term potential as a C++ educational and systems programming tool. A future rewrite could move beyond a Java visualization app and become a deeper floating-point exploration environment with lower-level control and expanded numerical analysis features.
+
+Planned future directions:
+- Rewrite the simulator in C++
+- Add support for float, double, and extended precision comparisons
+- Show bit-level manipulation more directly using C++ memory and type tools
+- Add step-through execution mode for each arithmetic stage
+- Include visual comparisons between ideal real-number math and machine arithmetic
+- Add graphing tools to show error growth over repeated operations
+- Expand into a mini numerical methods lab with root-finding and approximation demos
+- Add preset experiments for cancellation, overflow, underflow, NaN, infinities, and denormals
+- Possibly grow into a calculator-style desktop tool for teaching computer architecture and numerical computing
+
+## Why This Project Matters
+
+ErrorExplorer is a strong portfolio project because it shows understanding of floating-point representation, numerical correctness, and how computers actually perform arithmetic. A future C++ version would make it even stronger for systems, simulation, and low-level engineering work.
 
 ## Requirements
 
